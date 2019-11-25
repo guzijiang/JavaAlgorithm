@@ -2,7 +2,7 @@ package src.com.dynamic;
 
 public class Test4 {
 
-    // 机器人走路 二维数组DP
+    // 字符串替换
     public static void main(String[] args) {
         String word1 = "horse", word2 = "ros";
         int cnt = f(word1, word2);
