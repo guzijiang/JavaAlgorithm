@@ -50,7 +50,7 @@ public class Test2 {
 //            TagObject o = chooseTagObj2(list);
             TagObject o = chooseTagObj3(list);
             if (o == null) break;
-            
+
             if (totalWeight - o.weight >= 0) {
                 o.status = 1;
                 maxWeight += o.weight;
