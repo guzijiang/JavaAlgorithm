@@ -18,6 +18,7 @@ public class Test3 {
         while (text.length() > 0 && !exit) { //text中还有字符没有选
             for (int i = 0; i < 26; i++) {
                 String s1 = strContainAZChar(text, i);
+                //text包含该字符
                 if (s1 == null || selectedArr.contains(s1)) {
                     if (i == 25) {
                         exit = true;
@@ -27,8 +28,8 @@ public class Test3 {
 
                 int subStrIdx = text.indexOf(s1);
                 String subStr = text.substring(subStrIdx);
-                //text包含该字符 && 子序列可包含text中所有字符
-                if (!existDifferentChar(text, subStr, selectedArr)) {
+                //子序列可包含text中所有字符
+                if (!strExistDifferentChar(text, subStr, selectedArr)) {
                     ret += s1;
                     text = text.substring(subStrIdx + 1);;
                     selectedArr.add(s1);
@@ -41,7 +42,7 @@ public class Test3 {
         System.out.println("----------" + ret);
     }
 
-    public static boolean existDifferentChar(String oriStr, String descStr, ArrayList<String> selectedArr) {
+    public static boolean strExistDifferentChar(String oriStr, String descStr, ArrayList<String> selectedArr) {
         boolean existDifferent = false;
         for (char c1 : oriStr.toCharArray()) {
             if (selectedArr.contains(String.valueOf(c1))) continue;
