@@ -3,6 +3,9 @@ package src.com.dynamic;
 public class Test1 {
 
     //https://zhuanlan.zhihu.com/p/91582909?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+    //第一步骤：定义数组元素的含义
+    //第二步骤：找出数组元素之间的关系式
+    //第三步骤：找出初始值
 
     //小青蛙跳台阶 一维数组DP
     public static void main(String[] args) {

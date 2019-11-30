@@ -3,6 +3,9 @@ package src.com.recursion;
 public class Test1 {
 
     //https://mp.weixin.qq.com/s/mJ_jZZoak7uhItNgnfmZvQ
+    //第一要素：明确你这个函数想要干什么
+    //第二要素：寻找递归结束条件
+    //第三要素：找出函数的等价关系式
 
     // 反转链表
     public static void main(String[] args) {
