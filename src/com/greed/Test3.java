@@ -10,14 +10,14 @@ public class Test3 {
 //        String text = "ecbacba"; //eacb
 //        String text = "cdadabcc"; //adbc
         String text = "ebcee"; //bce
-        
+
         String ret = "";
         ArrayList<String> selectedArr = new ArrayList<>();
 
         boolean exit = false;
         while (text.length() > 0 && !exit) { //text中还有字符没有选
             for (int i = 0; i < 26; i++) {
-                String s1 = containAZChar(text, i);
+                String s1 = strContainAZChar(text, i);
                 if (s1 == null || selectedArr.contains(s1)) {
                     if (i == 25) {
                         exit = true;
@@ -54,7 +54,7 @@ public class Test3 {
         return existDifferent;
     }
 
-    public static String containAZChar(String oriStr, int idx) {
+    public static String strContainAZChar(String oriStr, int idx) {
         char c1 = (char) ((byte)'a' + idx);
         String s1 = String.valueOf(c1);
         if (oriStr.contains(s1)) {
